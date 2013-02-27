@@ -22,11 +22,16 @@ body {
 
     -webkit-perspective: 500;            
 }
+
+.stage { 
+}
+
 .cube {
-    -webkit-transform-style: preserve-3d;
     width: 200px;
     height: 200px;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(-25deg);
     -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -34,8 +39,8 @@ body {
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotateY(0deg); }
-    100% { -webkit-transform: rotateY(-360deg); }
+    0% { -webkit-transform: rotateX(-25deg) rotateY(0deg); }
+    100% { -webkit-transform: rotateX(-25deg) rotateY(-360deg); }
 }
 
 .cube .face {
@@ -54,6 +59,7 @@ body {
 .cube .north { -webkit-transform: rotateY(90deg)  translateZ(100px); }
 .cube .west  { -webkit-transform: rotateY(180deg) translateZ(100px); }
 .cube .south { -webkit-transform: rotateY(270deg) translateZ(100px); }
+.cube .top   { -webkit-transform: rotateX(90deg)  translateZ(100px); }
 
 .cube .content {
     font-family: 'Times New Roman';
@@ -64,3 +70,11 @@ body {
 .cube .north .content { -webkit-transform: translateX(-200px); }
 .cube .west .content  { -webkit-transform: translateX(-400px); }
 .cube .south .content { -webkit-transform: translateX(-600px); }
+.cube .top .content {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url('terminator.svg');
+    background-size: 100%;
+    opacity: 0.5;
+}
