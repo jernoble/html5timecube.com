@@ -24,8 +24,8 @@ body {
 }
 .cube {
     -webkit-transform-style: preserve-3d;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     position: relative;
     -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
@@ -50,16 +50,17 @@ body {
     border-color: black;
 }
 
-.cube .east  { -webkit-transform: translateZ(50px); }
-.cube .north { -webkit-transform: rotateY(90deg)  translateZ(50px); }
-.cube .west  { -webkit-transform: rotateY(180deg) translateZ(50px); }
-.cube .south { -webkit-transform: rotateY(270deg) translateZ(50px); }
+.cube .east  { -webkit-transform: translateZ(100px); }
+.cube .north { -webkit-transform: rotateY(90deg)  translateZ(100px); }
+.cube .west  { -webkit-transform: rotateY(180deg) translateZ(100px); }
+.cube .south { -webkit-transform: rotateY(270deg) translateZ(100px); }
 
 .cube .content {
-    font-size: 50px;
+    font-family: 'Times New Roman';
+    font-size: 100px;
     display: inline-block;
 }
 .cube .east .content  { }
-.cube .north .content { -webkit-transform: translateX(-100px); }
-.cube .west .content  { -webkit-transform: translateX(-200px); }
-.cube .south .content { -webkit-transform: translateX(-300px); }
+.cube .north .content { -webkit-transform: translateX(-200px); }
+.cube .west .content  { -webkit-transform: translateX(-400px); }
+.cube .south .content { -webkit-transform: translateX(-600px); }
