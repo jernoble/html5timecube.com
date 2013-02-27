@@ -8,18 +8,18 @@
 </head>
 <body>
     <main>
-        <div class="title centered">
+        <div class="title vbox">
             <div class=cube>
-                <div class="centered face east">
+                <div class="vbox face east">
                     <span class="content">''TIME CUBE 4ce''</span>
                 </div>
-                <div class="centered face north">
+                <div class="vbox face north">
                     <span class="content">''TIME CUBE 4ce''</span>
                 </div>
-                <div class="centered face west">
+                <div class="vbox face west">
                     <span class="content">''TIME CUBE 4ce''</span>
                 </div>
-                <div class="centered face south">
+                <div class="vbox face south">
                     <span class="content">''TIME CUBE 4ce''</span>
                 </div>
                 <div class="face top">
@@ -27,22 +27,97 @@
                 </div>
             </div>
         </div>
-        <div class="centered">
+        <div class="vbox">
             <div class=big>
                 <span>Earth has 4 days simultaneously each rotation.</span>
                 <br/>
                 <span>You erroneously measure time from one corner.</span>
             </div>
             <br/>
-            <div class="diagram centered">
-                <div class="spinner centered">
-                    <div class="corner nw"></div>
-                    <div class="corner ne"></div>
-                    <div class="corner sw"></div>
-                    <div class="corner se"></div>
+            <div class=hbox>
+                <div class=vbox>
+                    <div class="map hbox">
+                        <img class=up src="vertical-arrow.svg" />
+                        <div class=table>
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="content hbox"><span>DAY</span></div>
+                        <img class=down src="vertical-arrow.svg" />
+                    </div>
+                    <div class="map hbox">
+                        <img class=up src="vertical-arrow.svg" />
+                        <div class=table>
+                            <table>
+                                <tr>
+                                    <td>4</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="content hbox"><span>DAY</span></div>
+                        <img class=down src="vertical-arrow.svg" />
+                    </div>
                 </div>
-                <span class="content">DAY</span>
+                <div class="diagram vbox">
+                    <div class="spinner vbox">
+                        <div class="corner nw"></div>
+                        <div class="corner ne"></div>
+                        <div class="corner sw"></div>
+                        <div class="corner se"></div>
+                    </div>
+                    <span class="content">DAY</span>
+                </div>
+                <div class=vbox>
+                    <div class="map hbox">
+                        <img class=up src="vertical-arrow.svg" />
+                        <div class=table>
+                            <table>
+                                <tr>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="content hbox"><span>DAY</span></div>
+                        <img class=down src="vertical-arrow.svg" />
+                    </div>
+                    <div class="map hbox">
+                        <img class=up src="vertical-arrow.svg" />
+                        <div class=table>
+                            <table>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="content hbox"><span>DAY</span></div>
+                        <img class=down src="vertical-arrow.svg" />
+                    </div>
+                </div>
             </div>
+
         </div>
     </main>
 </body>
