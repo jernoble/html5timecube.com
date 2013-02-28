@@ -1,8 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    text-align: center;
     background-image: url(grid.png);
+}
+.text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 .vbox, .hbox {
     display:-moz-box;
@@ -137,4 +141,29 @@ main {
 }
 .map img.down {
     -webkit-transform:rotateZ(180deg);
+}
+
+.quote {
+    position: relative;
+    margin: 0 5em;
+}
+
+.quote blockquote:before {
+    content: "\"";
+    position: absolute;
+    font-size: 600%;
+    left: -.2em;
+    top: -.4em;
+    color: gray;
+    z-index: -1;
+}
+
+.quote blockquote {
+    font-style: italic;
+    font-size: 200%;
+}
+.quote cite {
+    display: block;
+    text-align: right;
+    font-size: 150%;
 }
