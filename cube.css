@@ -116,8 +116,8 @@ main {
 }
 .map table tr:first-child td:first-child { -webkit-transform: rotateZ(-45deg); }
 .map table tr:first-child td:last-child  { -webkit-transform: rotateZ(45deg); }
-.map table tr:last-child  td:last-child  { -webkit-transform: rotateZ(125deg); }
-.map table tr:last-child  td:first-child { -webkit-transform: rotateZ(-125deg); }
+.map table tr:last-child  td:last-child  { -webkit-transform: rotateZ(135deg); }
+.map table tr:last-child  td:first-child { -webkit-transform: rotateZ(-135deg); }
 
 .map .content {
     position: absolute;

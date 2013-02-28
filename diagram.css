@@ -34,7 +34,7 @@
 }
 .diagram .spinner .nw { right: 100%; bottom: 100%; -webkit-transform: rotateZ(-45deg); }
 .diagram .spinner .ne { left:  100%; bottom: 100%; -webkit-transform: rotateZ(45deg); }
-.diagram .spinner .se { left:  100%; top: 100%; -webkit-transform: rotateZ(125deg);}
+.diagram .spinner .se { left:  100%; top: 100%; -webkit-transform: rotateZ(135deg);}
 .diagram .spinner .sw { right: 100%; top: 100%; -webkit-transform: rotateZ(225deg);}
 
 .diagram .content {
